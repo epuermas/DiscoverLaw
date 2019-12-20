@@ -16,13 +16,9 @@ export const Navbar = () => {
 			</button>
 			<div className="collapse navbar-collapse" id="navbarNav">
 				<ul className="navbar-nav">
-					<img
-						src="https://i.imgur.com/Hkm9zHE.png"
-						width="100%"
-						alt=""
-						className="d-inline-block align-middle mr-2"
-					/>
-
+					<div className="company-logo">
+						<img src="https://i.imgur.com/Hkm9zHE.png" width="100%" alt="" className="pull-left" />
+					</div>
 					<li className="nav-item active">
 						<a className="nav-link" href="#">
 							Home <span className="sr-only">(current)</span>
