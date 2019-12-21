@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 export const Jumbotron = () => {
 	return (
 		<div className="jumbotron">
-			<img src="https://image.freepik.com/free-photo/judge-holding-pen-checking-document-wooden-desk_23-2147898393.jpg" />
-			<center>
+			<center className="jumtext">
 				<h1 className="display-4">Welcome to DiscoverLaw</h1>
 				<p className="lead">Legal help is just a few clicks away.</p>
 				<br />
