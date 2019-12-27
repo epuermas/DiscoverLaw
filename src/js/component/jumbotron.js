@@ -8,7 +8,7 @@ export const Jumbotron = () => {
 				<h1 className="display-4">Welcome to DiscoverLaw</h1>
 				<p className="lead">Legal help is just a few clicks away.</p>
 				<br />
-				<a className="btn btn-primary btn-lg" href="#" role="button">
+				<a className="get-started btn-primary btn-lg" href="#" role="button">
 					Get started
 				</a>
 			</center>

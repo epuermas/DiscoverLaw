@@ -23,11 +23,16 @@
     color: white;
     text-align: center;
     padding-top: 100px;
+    
+}
+
+.display-4 {
     text-shadow: 2px 2px 3px black;
 }
 
 .lead {
     font-weight: bold;
+    text-shadow: 2px 2px 3px black;
 }
 
 .footer {
@@ -50,4 +55,9 @@
     background-color: #DCAA69;
     float: center;
     margin-left: 10px;
+}
+
+.get-started {
+    background-color: #DCAA69;
+
 }
