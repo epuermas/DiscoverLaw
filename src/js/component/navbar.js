@@ -27,6 +27,12 @@ export const Navbar = () => {
 
 					<li className="nav-item">
 						<a className="nav-link" href="#">
+							Find A Lawyer
+						</a>
+					</li>
+
+					<li className="nav-item">
+						<a className="nav-link" href="#">
 							Features
 						</a>
 					</li>
