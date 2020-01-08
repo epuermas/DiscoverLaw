@@ -5,14 +5,8 @@ import { Context } from "../store/appContext";
 
 import "../../styles/demo.scss";
 
-export const Demo = () => {
+export const UserProfile = () => {
 	const { store, actions } = useContext(Context);
 
-	return (
-		<div className="container">
-			<Link to="/">
-				<button className="btn btn-primary">Back home</button>
-			</Link>
-		</div>
-	);
+	return <div className="user-profile" />;
 };
