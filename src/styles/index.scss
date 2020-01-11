@@ -57,7 +57,31 @@
     margin-left: 10px;
 }
 
-.get-started {
+.log-in {
     background-color: #DCAA69;
+    position: absolute;
+    left: 625px;
+}
+
+.create-account {
+    background-color: #DCAA69;
+    position: absolute;
+    right: 625px;
+}
+
+.log-in-form {
+    background-color:#F9E4C5;
+    max-height: 400px;
+    max-width: 400px;
+    float: center;
+}
+
+.create-account-form {
+    background-color:#F9E4C5;
+    max-width: 400px;
+    float: center;
+}
+
+.sign-up-btn {
 
 }

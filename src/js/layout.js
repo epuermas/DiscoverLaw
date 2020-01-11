@@ -5,13 +5,14 @@ import ScrollToTop from "./component/scrollToTop";
 import { Home } from "./views/home";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
-import { CreateAccount } from "./views/CreateAccount";
+import { CreateAccount } from "./CreateAccount";
 import { UserProfile } from "./views/UserProfile";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { Jumbotron } from "./component/jumbotron";
+import { LogIn } from "./component/login";
 
 //create your first component
 export const Layout = () => {
@@ -31,6 +32,8 @@ export const Layout = () => {
 						<Route path="/single/:theid" component={Single} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
+					<div className="log-in-form-landing" />
+					<br />
 					<Footer />
 				</ScrollToTop>
 			</BrowserRouter>
