@@ -35,7 +35,7 @@ export const CreateAccountForm = () => {
 					<label htmlFor="exampleFormControlInput1">Zip Code</label>
 					<input type="password" className="form-control" id="exampleFormControlInput1" placeholder="33174" />
 				</div>
-				<button type="submit" className="sign-up-btn btn-primary">
+				<button type="submit" className="btn btn-primary">
 					Sign Up
 				</button>
 			</form>

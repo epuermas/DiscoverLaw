@@ -13,6 +13,7 @@ import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { Jumbotron } from "./component/jumbotron";
 import { LogIn } from "./component/login";
+import { CreateAccountForm } from "./component/createAccountForm";
 
 //create your first component
 export const Layout = () => {
@@ -32,7 +33,9 @@ export const Layout = () => {
 						<Route path="/single/:theid" component={Single} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
-					<div className="log-in-form-landing" />
+					<div className="log-in-form-landing">
+						<CreateAccountForm />
+					</div>
 					<br />
 					<Footer />
 				</ScrollToTop>
