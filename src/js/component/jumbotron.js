@@ -10,10 +10,14 @@ export const Jumbotron = () => {
 				<br />
 				<div className="ml-auto">
 					<Link to="login">
-						<button className="log-in btn-primary btn-lg">Log In</button>
+						<a className="log-in btn-primary btn-lg" href="#" role="button">
+							Log In
+						</a>
 					</Link>
 					<Link to="/createAccountForm">
-						<button className="create-account btn-primary btn-lg">Sing Up</button>
+						<a className="create-account btn-primary btn-lg" href="#" role="button">
+							Create Account
+						</a>
 					</Link>
 				</div>
 			</center>
