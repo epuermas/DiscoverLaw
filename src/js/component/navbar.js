@@ -37,14 +37,14 @@ export const Navbar = () => {
 						</a>
 					</li>
 				</ul>
-				<div className="ml-auto">
+				{/* <div className="ml-auto">
 					<Link to="login">
 						<button className="btn btn-primary">Log In</button>
 					</Link>
 					<Link to="/createAccountForm">
 						<button className="btn btn-primary">Sing Up</button>
 					</Link>
-				</div>
+				</div> */}
 			</div>
 		</nav>
 	);

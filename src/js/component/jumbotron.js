@@ -8,12 +8,14 @@ export const Jumbotron = () => {
 				<h1 className="display-4">Welcome to DiscoverLaw</h1>
 				<p className="lead">Legal help is just a few clicks away.</p>
 				<br />
-				{/* <a className="log-in btn-primary btn-lg" href="#" role="button">
-					Log In
-				</a>
-				<a className="create-account btn-primary btn-lg" href="#" role="button">
-					Create Account
-				</a> */}
+				<div className="ml-auto">
+					<Link to="login">
+						<button className="btn btn-primary">Log In</button>
+					</Link>
+					<Link to="/createAccountForm">
+						<button className="btn btn-primary">Sing Up</button>
+					</Link>
+				</div>
 			</center>
 		</div>
 	);
