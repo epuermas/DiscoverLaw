@@ -20,7 +20,7 @@ export const Navbar = () => {
 						<img src="https://i.imgur.com/Hkm9zHE.png" width="100%" alt="" className="pull-left" />
 					</div>
 					<li className="nav-item active">
-						<a className="nav-link" href="#">
+						<a className="nav-link" href="/">
 							Home <span className="sr-only">(current)</span>
 						</a>
 					</li>
@@ -38,7 +38,7 @@ export const Navbar = () => {
 					</li>
 				</ul>
 				<div className="ml-auto">
-					<Link to="login">
+					<Link to="/login">
 						<a className="log-in btn-primary btn-lg" href="#" role="button">
 							Log In
 						</a>
