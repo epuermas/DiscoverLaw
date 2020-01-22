@@ -1,5 +1,5 @@
 # WebApp boilerplate with React JS
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/4GeeksAcademy/react-hello-webapp.git)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/epuermas/Final-Project/commits/master)
 
 ### Requirements:
 - Make sure you are using node version 8
