@@ -60,13 +60,15 @@
 .log-in {
     background-color: #DCAA69;
     position: absolute;
-    left: 625px;
+    right: 15px;
+    bottom: 20px;
 }
 
 .create-account {
     background-color: #DCAA69;
     position: absolute;
-    right: 625px;
+    right: 130px;
+    bottom: 20px;
 }
 
 .log-in-form {
@@ -88,4 +90,11 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.get-started {
+    background-color: #DCAA69;
+    margin-left: auto;
+    margin-right: auto;
+
 }

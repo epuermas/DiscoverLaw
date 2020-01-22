@@ -37,14 +37,18 @@ export const Navbar = () => {
 						</a>
 					</li>
 				</ul>
-				{/* <div className="ml-auto">
+				<div className="ml-auto">
 					<Link to="login">
-						<button className="btn btn-primary">Log In</button>
+						<a className="log-in btn-primary btn-lg" href="#" role="button">
+							Log In
+						</a>
 					</Link>
 					<Link to="/createAccountForm">
-						<button className="btn btn-primary">Sing Up</button>
+						<a className="create-account btn-primary btn-lg" href="#" role="button">
+							Sing Up
+						</a>
 					</Link>
-				</div> */}
+				</div>
 			</div>
 		</nav>
 	);
