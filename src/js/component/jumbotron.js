@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Demo } from "../views/demo";
 
 export const Jumbotron = () => {
 	return (
@@ -9,7 +10,7 @@ export const Jumbotron = () => {
 				<p className="lead">Legal help is just a few clicks away.</p>
 				<br />
 				<div className="ml-auto">
-					<Link to="login">
+					<Link to="demo">
 						<a className="get-started btn-primary btn-lg" href="#" role="button">
 							Find A Lawyer
 						</a>

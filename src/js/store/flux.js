@@ -29,13 +29,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 			loadSomeData: () => {
 				let url = "https://api.yelp.com/v3/businesses/search?location=33156&term=law";
 				let url1 = "https://swapi.co/api/planets";
-				fetch(
-					url
-					//     {
-					// 	method: "GET",
-					// 	headers: myHeaders
-					// }
-				)
+				fetch(url, {
+					method: "GET",
+					headers: myHeaders
+				})
 					.then(res => res.json())
 					.then(data => {
 						console.log("dataaaa", data), setStore({ lawData: data });

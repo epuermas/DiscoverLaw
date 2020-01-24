@@ -42,7 +42,7 @@ export const Navbar = () => {
 						Log In
 					</Link>
 					<Link to={"/createAccount"} className="create-account btn-primary btn-lg" href="#" role="button">
-						SIGN UP
+						Sign Up
 					</Link>
 				</div>
 			</div>
