@@ -38,15 +38,11 @@ export const Navbar = () => {
 					</li>
 				</ul>
 				<div className="ml-auto">
-					<Link to="/login">
-						<a className="log-in btn-primary btn-lg" href="#" role="button">
-							Log In
-						</a>
+					<Link to={"/login"} className="log-in btn-primary btn-lg" href="#" role="button">
+						Log In
 					</Link>
-					<Link to="/createAccountForm">
-						<a className="create-account btn-primary btn-lg" href="#" role="button">
-							Sing Up
-						</a>
+					<Link to={"/createAccount"} className="create-account btn-primary btn-lg" href="#" role="button">
+						SIGN UP
 					</Link>
 				</div>
 			</div>

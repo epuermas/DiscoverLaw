@@ -28,14 +28,10 @@ export const Layout = () => {
 						<Route exact path="/" component={Home} />
 						<Route path="/demo" component={Demo} />
 						<Route path="/login" component={LogIn} />
-						<Route path="/CreateAccount" component={CreateAccount} />
+						<Route exact path="/CreateAccount" component={CreateAccount} />
 						<Route path="/single/:theid" component={Single} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
-					{/* <div className="log-in-form-landing">
-						<CreateAccountForm />
-					</div>
-					<br /> */}
 					<Footer />
 				</ScrollToTop>
 			</BrowserRouter>
