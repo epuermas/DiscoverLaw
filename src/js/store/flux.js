@@ -1,23 +1,9 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	const myHeaders = new Headers({
-		"Content-Type": "application/json",
-		Authorization:
-			"M_FCQDX370AIk4bzX039NDycP5w1XXqLS26vYFNC2tDExjcooqVcTEW2BuN6zClHk-rREVgZ7qKUTJqbnDMOvk75DzjBXSZPR20QmFTojp-GCVdxwu08C2h0CCr8XXYx"
+		"Content-Type": "application/json"
 	});
 	return {
 		store: {
-			demo: [
-				{
-					title: "FIRST",
-					background: "white",
-					initial: "white"
-				},
-				{
-					title: "SECOND",
-					background: "white",
-					initial: "white"
-				}
-			],
 			lawData: []
 		},
 		actions: {
@@ -27,8 +13,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 
 			loadSomeData: () => {
-				let url = "https://api.yelp.com/v3/businesses/search?location=33156&term=law";
-				let url1 = "https://swapi.co/api/planets";
+				let url =
+					"https://newsapi.org/v2/top-headlines?" + "country=us&" + "apiKey=ac3b6745f35049228bbf45bb264b948c";
 				fetch(url, {
 					method: "GET",
 					headers: myHeaders

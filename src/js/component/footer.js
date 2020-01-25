@@ -9,10 +9,8 @@ export const Footer = () => (
 		</a>
 
 		<div className="ml-auto">
-			<Link to="demo">
-				<a className="fal-button btn-primary btn-lg" href="#" role="button">
-					Find A Lawyer
-				</a>
+			<Link to={"demo"} className="fal-button btn-primary btn-lg" href="#" role="button">
+				Find A Lawyer
 			</Link>
 		</div>
 
