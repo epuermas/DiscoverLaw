@@ -1,7 +1,4 @@
 const getState = ({ getStore, getActions, setStore }) => {
-	const myHeaders = new Headers({
-		"Content-Type": "application/json"
-	});
 	return {
 		store: {
 			lawData: []
@@ -13,12 +10,12 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 
 			loadSomeData: () => {
-				let url =
-					"https://newsapi.org/v2/top-headlines?" + "country=us&" + "apiKey=ac3b6745f35049228bbf45bb264b948c";
-				fetch(url, {
-					method: "GET",
-					headers: myHeaders
-				})
+				let url = "https://newsapi.org/v2/top-headlines?country=US&apiKey=ac3b6745f35049228bbf45bb264b948c";
+				fetch(url)
+					//     {
+					// 	method: "GET",
+					// 	headers: myHeaders
+					// })
 					.then(res => res.json())
 					.then(data => {
 						console.log("dataaaa", data), setStore({ lawData: data });
