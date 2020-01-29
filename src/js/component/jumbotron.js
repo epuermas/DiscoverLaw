@@ -10,7 +10,7 @@ export const Jumbotron = () => {
 				<p className="lead">Legal help is just a few clicks away.</p>
 				<br />
 				<div className="ml-auto">
-					<Link to={"demo"} className="get-started btn-primary btn-lg" href="#" role="button">
+					<Link to={"findalawyer"} className="get-started btn-primary btn-lg" href="#" role="button">
 						Find A Lawyer
 					</Link>
 				</div>

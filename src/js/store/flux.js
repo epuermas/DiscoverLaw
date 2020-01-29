@@ -10,8 +10,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 
 			loadSomeData: () => {
-				let url = "https://newsapi.org/v2/top-headlines?country=US&apiKey=ac3b6745f35049228bbf45bb264b948c";
-				fetch(url)
+				// let url = "https://newsapi.org/v2/top-headlines?country=US&apiKey=ac3b6745f35049228bbf45bb264b948c";
+				let url1 = "https://discoverlaw.herokuapp.com/lawyer";
+				fetch(url1)
 					//     {
 					// 	method: "GET",
 					// 	headers: myHeaders
