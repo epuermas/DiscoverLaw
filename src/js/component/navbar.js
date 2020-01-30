@@ -26,14 +26,14 @@ export const Navbar = () => {
 					</li>
 
 					<li className="nav-item">
-						<a className="nav-link" href="#">
+						<Link to={"findalawyer"} className="nav-link" href="#">
 							Find A Lawyer
-						</a>
+						</Link>
 					</li>
 
 					<li className="nav-item">
 						<a className="nav-link" href="#">
-							Features
+							Ask A Lawyer
 						</a>
 					</li>
 				</ul>
