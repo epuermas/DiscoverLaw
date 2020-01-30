@@ -10,31 +10,20 @@ export const FindALawyer = () => {
 	console.log("data", store.lawData);
 
 	return (
-		<div className="container">
+		<div className="fal-view container">
 			{store.lawData &&
 				store.lawData.map((e, index) => (
 					<li key={index} className="list-group-item rigobaby" style={{ margin: "5px" }}>
 						<div className="row w-100">
 							<div className="col-12 col-sm-6 col-md-3 px-0">
 								<img
-									src={rigo}
+									src="https://i.imgur.com/5A6LNz5.jpg"
 									alt="Mike Anamendolla"
 									className="rounded-circle mx-auto d-block img-fluid"
 								/>
 							</div>
 							<div className="col-12 col-sm-6 col-md-9 text-center text-sm-left">
-								<div className=" float-right">
-									{/* <Link to={"/edit/" + e.id + "/" + index}> */}
-									<button className="btn">
-										<i className="fas fa-pencil-alt mr-3" />
-									</button>
-									{/* </Link> */}
-									{/* <button className="btn">
-                                        <i className="fas fa-trash-alt" onClick={() => actions.deleteContact(e.id)} />
-                                    </button> */}
-									{/* <Modale id={e.id} /> */}
-								</div>
-								<label className="name lead">{e.name}</label>
+								<label className="name head">{e.name}</label>
 								<br />
 								<i className="fas fa-map-marker-alt text-muted mr-3" />
 								<span className="text-muted">{e.zipcode}</span>
@@ -58,9 +47,8 @@ export const FindALawyer = () => {
 						</div>
 					</li>
 				))}
-
-			<Link to="/">
-				<button className="btn btn-primary">Bhome</button>
+			<Link to={"/"} className="back-home btn-primary btn-lg" href="#" role="button">
+				Back Home
 			</Link>
 		</div>
 	);
