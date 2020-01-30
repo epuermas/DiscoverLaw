@@ -4,7 +4,7 @@ import ScrollToTop from "./component/scrollToTop";
 
 import { Home } from "./views/home";
 import { FindALawyer } from "./views/demo";
-import { Single } from "./views/single";
+import { Single, AskALawyer } from "./views/AskALawyer";
 import { CreateAccount } from "./views/CreateAccount";
 import { UserProfile } from "./views/UserProfile";
 import injectContext from "./store/appContext";
@@ -29,6 +29,7 @@ export const Layout = () => {
 						<Route path="/findalawyer" component={FindALawyer} />
 						<Route path="/login" component={LogIn} />
 						<Route exact path="/CreateAccount" component={CreateAccount} />
+						<Route exact path="/askalawyer" component={AskALawyer} />
 						<Route path="/single/:theid" component={Single} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>

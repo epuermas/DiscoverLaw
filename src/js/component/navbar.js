@@ -32,9 +32,9 @@ export const Navbar = () => {
 					</li>
 
 					<li className="nav-item">
-						<a className="nav-link" href="#">
+						<Link to={"/askalawyer"} className="nav-link" href="#">
 							Ask A Lawyer
-						</a>
+						</Link>
 					</li>
 				</ul>
 				<div className="ml-auto">
