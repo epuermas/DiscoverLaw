@@ -4,19 +4,17 @@ import { Demo } from "../views/demo";
 
 export const Footer = () => (
 	<footer className="footer mt-auto py-3">
-		<a className="about-button btn-primary btn-lg" href="#" role="button">
+		<Link to={""} className="about-button" href="#">
 			About Us
-		</a>
+		</Link>
 
-		<div className="ml-auto">
-			<Link to={"findalawyer"} className="fal-button btn-primary btn-lg" href="#" role="button">
-				Find A Lawyer
-			</Link>
-		</div>
+		<Link to={"findalawyer"} className="fal-button" href="#">
+			Find A Lawyer
+		</Link>
 
-		<a className="contact-us-button btn-primary btn-lg" href="#" role="button">
-			Contact Us
-		</a>
+		<Link to={"/askalawyer"} className="aal-button" href="#">
+			Ask A Lawyer
+		</Link>
 
 		<p>
 			<br />
