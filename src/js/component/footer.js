@@ -12,34 +12,31 @@ export const Footer = () => (
 			position: "absolute",
 			width: "100%",
 			height: "200px",
-			bottom: "0"
+			bottom: "0",
+			backgroundColor: "#F9E4C5"
 		}}>
-		<div
-			style={{
-				position: "absolute",
-				width: "25%",
-				height: "100%",
-				backgroundColor: "green",
-				left: "75%"
-			}}>
-			<SocialIcon
-				style={{ margin: "5px", position: "absolute", right: "0", color: "black" }}
-				url="http://twitter.com/jaketrent"
-			/>
-		</div>
+		<Link to={"/askalawyer"} className="aal-button">
+			Ask A Lawyer
+		</Link>
+		<Link to={"findalawyer"} className="fal-button">
+			Find A Lawyer
+		</Link>
+		<Link to={"/"} className="home-button">
+			Home
+		</Link>
+		<SocialIcon url="https://www.instagram.com/eddy_prms/" id="instagram" />
+		<SocialIcon url="https://github.com/epuermas" id="github" />
+		<SocialIcon url="https://twitter.com/home" id="twitter" />
 	</footer>
 );
+
 /* <Link to={""} className="about-button" href="#">
 			About Us
 		</Link>
 
-		<Link to={"findalawyer"} className="fal-button" href="#">
-			Find A Lawyer
-		</Link>
+		
 
-		<Link to={"/askalawyer"} className="aal-button" href="#">
-			Ask A Lawyer
-		</Link>
+
 
 		{/* <p>
 			<br />

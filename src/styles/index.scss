@@ -37,7 +37,8 @@
 
 .footer {
     background-color: #F9E4C5;
-    min-height: 150px
+    height: 200px;
+    bottom: 0px;
 }
 
 .about-button {
@@ -104,36 +105,61 @@
     max-width: 500px;
 }
 
+.home-button {
+    font-size: 15pt;
+    color: black;
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 800px;
+}
+
 .about-button {
     font-size: 15pt;
     color: white;
     position: absolute;
     margin-top: 80px;
-    margin-left: 25px;
+    margin-left: 50%;
 }
 
 .aal-button {
     font-size: 15pt;
-    color: white;
+    color: black;
     position: absolute;
     margin-top: 45px;
-    margin-left: 25px;
+    margin-left: 1050px;
 }
 
 .fal-button {
     font-size: 15pt;
-    color: white;
+    color: black;
     position: absolute;
-    margin-top: 10px;
-    margin-left: 25px;
+    margin-top: 45px;
+    margin-left: 900px;
 }
 .fab{
     position:absolute;
     height: 30%;
     width: auto;
 }
-SocialIcon{
-    height: 50px;
-    width: auto;
-    margin:5px;
+
+#github {
+    display: absolute;
+    margin-left: 47%;
+    margin-top: 100px;
+    padding: 5px, 5px, 5px, 5px;
 }
+
+#twitter {
+    display: absolute;
+    margin-top: 100px;
+    padding: 5px, 5px, 5px, 5px;
+}
+
+#instagram {
+    display: absolute;
+    left: 47%;
+    margin-top: 100px;
+    padding: 5px, 5px, 5px, 5px;
+}
+
+
