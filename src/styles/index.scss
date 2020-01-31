@@ -37,12 +37,12 @@
 
 .footer {
     background-color: #F9E4C5;
+    min-height: 150px
 }
 
 .about-button {
-    background-color: #DCAA69;
-    margin-left: auto;
-    margin-right: auto;
+    color: white;
+    position: absolute;
 }
 
 .contact-us-button {
@@ -104,12 +104,36 @@
     max-width: 500px;
 }
 
-.aal-button {
+.about-button {
+    font-size: 15pt;
     color: white;
     position: absolute;
+    margin-top: 80px;
+    margin-left: 25px;
+}
+
+.aal-button {
+    font-size: 15pt;
+    color: white;
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 25px;
 }
 
 .fal-button {
+    font-size: 15pt;
     color: white;
     position: absolute;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.fab{
+    position:absolute;
+    height: 30%;
+    width: auto;
+}
+SocialIcon{
+    height: 50px;
+    width: auto;
+    margin:5px;
 }
