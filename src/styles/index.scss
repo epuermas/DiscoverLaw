@@ -4,7 +4,6 @@
     margin-bottom: 0px;
     margin-top: 0px;
 }
-
 .nav-link {
     margin-left: 10px;
     margin-top: 18px; 
@@ -18,55 +17,45 @@
     background-position: center;
     backdrop-filter: blur(2px);
 }
-
 .jumtext {
     color: white;
     text-align: center;
     padding-top: 100px;
-    
 }
-
 .display-4 {
     text-shadow: 2px 2px 3px black;
 }
-
 .lead {
     font-weight: bold;
     text-shadow: 2px 2px 3px black;
 }
-
 .footer {
     background-color: #F9E4C5;
     height: 200px;
     bottom: 0px;
 }
-
 .about-button {
     color: white;
     position: absolute;
 }
-
 .contact-us-button {
     background-color: #DCAA69;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
 }
-
 .log-in {
     background-color: #DCAA69;
     position: absolute;
     right: 15px;
     bottom: 20px;
 }
-
 .create-account {
     background-color: #DCAA69;
     position: absolute;
     right: 130px;
     bottom: 20px;
 }
-
 .log-in-form {
     background-color:#F9E4C5;
     max-height: 400px;
@@ -74,26 +63,22 @@
     min-width: 400px;
     float: center;
 }
-
 .create-account-form {
     background-color:#F9E4C5;
     max-width: 400px;
     min-width: 400px;
     float: center;
 }
-
 .log-in-form-landing {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
 .get-started {
     background-color: #DCAA69;
     margin-left: auto;
     margin-right: auto;
 }
-
 .ask-form {
     display: block;
     margin-left: auto;
@@ -104,7 +89,6 @@
     min-width: 200px;
     max-width: 500px;
 }
-
 .home-button {
     font-size: 15pt;
     color: black;
@@ -117,20 +101,17 @@
     height: 30%;
     width: auto;
 }
-
 // #github {
 //     display: absolute;
 //     // margin-left: 47%;
 //     margin-top: 100px;
 //     // padding: 5px, 5px, 5px, 5px;
 // }
-
 // #twitter {
 //     display: absolute;
 //     margin-top: 100px;
 //     // padding: 5px, 5px, 5px, 5px;
 // }
-
 // #instagram {
 //     position: absolute;
 //     left: 47%;
@@ -156,7 +137,6 @@
     position: absolute;
     right: 0;
 }
-
 .twitter {
     position: absolute;
     left: 50%;
@@ -165,31 +145,39 @@
 .footerMenu {
     position: absolute;
     width: 40%;
-    height: 20px;
-    display: inline;
+    height: 30px;
+    // display: inline;
     top:20%;
     left: 30%;
-    border: 1px solid black;
+    // border: 1px solid black;
     // margin-left: auto;
     // margin-right: auto;
 }
-
 .homeL {
-    font-size: 15pt;
+    position:absolute;
+    width: 33%;
+    left:4%;
+    // font-size: 15pt;
     color: black;
+    text-decoration: underline;
 }
-
 .askL {
-    font-size: 15pt;
+    position:absolute;
+    width: 25%;
+    left:77%;
+    // font-size: 15pt;
     color: black;
+    text-decoration: underline;
 }
-
 .findL {
-    position: relative;
-    font-size: 15pt;
+    position:absolute;
+    width: 33%;
+    text-decoration: underline;
+    left:42%;
+    // position: relative;
+    // font-size: 15pt;
     color: black;
-    top: 0px;
-    width: 30%;
-    right: 0%;
-
+    // top: 0px;
+    // width: 30%;
+    // right: 0%;
 }

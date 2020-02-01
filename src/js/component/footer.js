@@ -4,7 +4,6 @@ import { Demo } from "../views/demo";
 import ReactDOM from "react-dom";
 import { SocialIcon } from "react-social-icons";
 import "../../styles/index.scss";
-
 export const Footer = () => (
 	<footer
 		className="footer mt-auto py-3"
@@ -17,13 +16,13 @@ export const Footer = () => (
 		}}>
 		<div className="footerMenu">
 			<Link to={"/askalawyer"}>
-				<div className="askL m-4">Ask A Lawyer</div>
+				<div className="askL">Ask A Lawyer</div>
 			</Link>
 			<Link to={"/"}>
-				<div className="homeL m-4">Home</div>
+				<div className="homeL">Home</div>
 			</Link>
 			<Link to={"findalawyer"}>
-				<div className="findL ml-4">Find A Lawyer</div>
+				<div className="findL">Find A Lawyer</div>
 			</Link>
 		</div>
 		<div className="socialMedia">
@@ -33,20 +32,13 @@ export const Footer = () => (
 		</div>
 	</footer>
 );
-
 /* <Link to={""} className="about-button" href="#">
 			About Us
 		</Link>
-
-		
-
-
-
 		{/* <p>
 			<br />
 			Made with <i className="fa fa-heart text-danger text-center" /> by E.Puermas, J.Guzman, Abel
         </p> */
-
 // <p>
 // 	<br />
 // 	<SocialIcon url="http://twitter.com/jaketrent" />
