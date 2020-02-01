@@ -17,6 +17,16 @@
     background-position: center;
     backdrop-filter: blur(2px);
 }
+.homeText{
+    position:absolute;
+    top:400px;
+    height: 400px;
+}
+.content{
+    position:absolute;
+    height: 1000px;
+    width: 100%;
+}
 .jumtext {
     color: white;
     text-align: center;
@@ -32,7 +42,7 @@
 .footer {
     background-color: #F9E4C5;
     height: 200px;
-    bottom: 0px;
+    bottom: 0;
 }
 .about-button {
     color: white;
