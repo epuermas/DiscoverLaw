@@ -15,18 +15,22 @@ export const Footer = () => (
 			bottom: "0",
 			backgroundColor: "#F9E4C5"
 		}}>
-		<Link to={"/askalawyer"} className="aal-button">
-			Ask A Lawyer
-		</Link>
-		<Link to={"findalawyer"} className="fal-button">
-			Find A Lawyer
-		</Link>
-		<Link to={"/"} className="home-button">
-			Home
-		</Link>
-		<SocialIcon url="https://www.instagram.com/eddy_prms/" id="instagram" />
-		<SocialIcon url="https://github.com/epuermas" id="github" />
-		<SocialIcon url="https://twitter.com/home" id="twitter" />
+		<div className="footerMenu">
+			<Link to={"/askalawyer"}>
+				<div className="askL m-4">Ask A Lawyer</div>
+			</Link>
+			<Link to={"/"}>
+				<div className="homeL m-4">Home</div>
+			</Link>
+			<Link to={"findalawyer"}>
+				<div className="findL ml-4">Find A Lawyer</div>
+			</Link>
+		</div>
+		<div className="socialMedia">
+			<i className="fab fa-instagram insta" url="https://www.instagram.com/eddy_prms/" />
+			<i className="fab fa-twitter-square twitter" url="https://twitter.com/home" />
+			<i className="fab fa-github-square github" url="https://github.com/epuermas" />
+		</div>
 	</footer>
 );
 

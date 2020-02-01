@@ -112,54 +112,84 @@
     margin-top: 45px;
     margin-left: 800px;
 }
-
-.about-button {
-    font-size: 15pt;
-    color: white;
-    position: absolute;
-    margin-top: 80px;
-    margin-left: 50%;
-}
-
-.aal-button {
-    font-size: 15pt;
-    color: black;
-    position: absolute;
-    margin-top: 45px;
-    margin-left: 1050px;
-}
-
-.fal-button {
-    font-size: 15pt;
-    color: black;
-    position: absolute;
-    margin-top: 45px;
-    margin-left: 900px;
-}
 .fab{
     position:absolute;
     height: 30%;
     width: auto;
 }
 
-#github {
-    display: absolute;
-    margin-left: 47%;
-    margin-top: 100px;
-    padding: 5px, 5px, 5px, 5px;
+// #github {
+//     display: absolute;
+//     // margin-left: 47%;
+//     margin-top: 100px;
+//     // padding: 5px, 5px, 5px, 5px;
+// }
+
+// #twitter {
+//     display: absolute;
+//     margin-top: 100px;
+//     // padding: 5px, 5px, 5px, 5px;
+// }
+
+// #instagram {
+//     position: absolute;
+//     left: 47%;
+//     margin-top: 100px;
+    // padding: 5px, 5px, 5px, 5px;
+// }
+.socialMedia {
+    // display: block;
+    // margin-left: auto;
+    // margin-right: auto;
+    position: absolute;
+    top: 50%;
+    width: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+.insta{
+    margin:2px;
+    left:0;
+}
+.github{
+    position: absolute;
+    right: 0;
 }
 
-#twitter {
-    display: absolute;
-    margin-top: 100px;
-    padding: 5px, 5px, 5px, 5px;
+.twitter {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.footerMenu {
+    position: absolute;
+    width: 40%;
+    height: 20px;
+    display: inline;
+    top:20%;
+    left: 30%;
+    border: 1px solid black;
+    // margin-left: auto;
+    // margin-right: auto;
 }
 
-#instagram {
-    display: absolute;
-    left: 47%;
-    margin-top: 100px;
-    padding: 5px, 5px, 5px, 5px;
+.homeL {
+    font-size: 15pt;
+    color: black;
 }
 
+.askL {
+    font-size: 15pt;
+    color: black;
+}
 
+.findL {
+    position: relative;
+    font-size: 15pt;
+    color: black;
+    top: 0px;
+    width: 30%;
+    right: 0%;
+
+}
