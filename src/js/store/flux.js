@@ -1,7 +1,28 @@
+import React from "react";
+
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			lawData: []
+			lawData: [],
+			cards: [
+				{
+					image: <i className="fas fa-search" />,
+					title: "Find Lawyers Near You",
+					description:
+						"Using our registry of attorneys you will be able to find the right counsil depending on your legal needs."
+				},
+				{
+					image: <i className="fas fa-question-circle" />,
+					title: "Ask Lawyers",
+					description:
+						"With our intuative 'Ask A Lawyer' service you'll be able to submit legal questions and receive answers from certified attorneys."
+				},
+				{
+					image: <i className="far fa-newspaper" />,
+					title: "Get Informed",
+					description: "Constant flow of news pertaining to legality, legislation, and current events."
+				}
+			]
 		},
 		actions: {
 			// Use getActions to call a function within a fuction

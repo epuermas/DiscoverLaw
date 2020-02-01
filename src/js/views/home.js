@@ -15,6 +15,8 @@ export const Home = () => {
 		<div className="content">
 			<div className="d-flex flex-column h-100">
 				<Jumbotron />
+				{/* <button>Sign in</button>
+				<button>Sign up</button> */}
 				<HomeText />
 			</div>
 		</div>

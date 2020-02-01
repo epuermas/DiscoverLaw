@@ -11,6 +11,7 @@
 }
 .jumbotron-fluid {
     background-image: url("https://i.imgur.com/PBZdORn.jpg");
+
     background-color: transparent;
     background-repeat:no-repeat;
     min-height: 400px;
@@ -19,7 +20,7 @@
 }
 .homeText{
     position:absolute;
-    top:400px;
+    top:410px;
     height: 300px;
     width: 100%;
 }
@@ -59,13 +60,13 @@
     background-color: #DCAA69;
     position: absolute;
     right: 15px;
-    bottom: 20px;
+    top: 15px;
 }
 .create-account {
     background-color: #DCAA69;
     position: absolute;
     right: 130px;
-    bottom: 20px;
+    top: 15px;
 }
 .log-in-form {
     background-color:#F9E4C5;
@@ -191,4 +192,10 @@
     // top: 0px;
     // width: 30%;
     // right: 0%;
+}
+
+.log-in-sign-up {
+    background-color:#F9E4C5;
+    right: 0px;
+    top: 0px;
 }
