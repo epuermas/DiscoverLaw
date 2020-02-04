@@ -31,6 +31,15 @@ export const CreateAccountForm = () => {
 						placeholder="*******"
 					/>
 				</div>
+				<div className="form-phone">
+					<label htmlFor="exampleFormControlInput1">Phone Number</label>
+					<input
+						type="phone"
+						className="form-control"
+						id="exampleFormControlInput1"
+						placeholder="(305)-555-1234"
+					/>
+				</div>
 				<div className="form-zip-code">
 					<label htmlFor="exampleFormControlInput1">Zip Code</label>
 					<input type="text" className="form-control" id="exampleFormControlInput1" placeholder="33174" />
