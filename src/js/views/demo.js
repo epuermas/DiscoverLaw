@@ -14,7 +14,7 @@ export const FindALawyer = () => {
 			{store.lawData &&
 				store.lawData.map((e, index) => (
 					<li key={index} className="list-group-item rigobaby" style={{ margin: "5px" }}>
-						<div className="row w-60">
+						<div className="fal-container row w-60">
 							<div className="col-11 col-sm-6 col-md-3 px-0">
 								<img
 									src="https://i.imgur.com/5A6LNz5.jpg"
@@ -34,7 +34,7 @@ export const FindALawyer = () => {
 									title=""
 									data-original-title="(870) 288-4149"
 								/>
-								<span className="text-muted small">{e.password}</span>
+								<span className="text-muted small">{e.phone}</span>
 								<br />
 								<span
 									className="fa fa-envelope fa-fw text-muted mr-3"
@@ -42,7 +42,15 @@ export const FindALawyer = () => {
 									data-original-title=""
 									title=""
 								/>
-								<span className="text-muted small text-truncate">{e.email}</span>
+								<span className="text-muted small">{e.email}</span>
+								<br />
+								<span
+									className="fas fa-building fa-fw text-muted mr-3"
+									data-toggle="tooltip"
+									data-original-title=""
+									title=""
+								/>
+								<span className="text-muted small text-truncate">{e.lawfirm}</span>
 							</div>
 						</div>
 					</li>

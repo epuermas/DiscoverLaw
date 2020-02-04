@@ -140,27 +140,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-// #github {
-//     display: absolute;
-//     // margin-left: 47%;
-//     margin-top: 100px;
-//     // padding: 5px, 5px, 5px, 5px;
-// }
-// #twitter {
-//     display: absolute;
-//     margin-top: 100px;
-//     // padding: 5px, 5px, 5px, 5px;
-// }
-// #instagram {
-//     position: absolute;
-//     left: 47%;
-//     margin-top: 100px;
-    // padding: 5px, 5px, 5px, 5px;
-// }
 .socialMedia {
-    // display: block;
-    // margin-left: auto;
-    // margin-right: auto;
     position: absolute;
     top: 50%;
     width: 10%;
@@ -185,18 +165,13 @@
     position: absolute;
     width: 40%;
     height: 30px;
-    // display: inline;
     top:20%;
     left: 30%;
-    // border: 1px solid black;
-    // margin-left: auto;
-    // margin-right: auto;
 }
 .homeL {
     position:absolute;
     width: 33%;
     left:4%;
-    // font-size: 15pt;
     color: black;
     text-decoration: underline;
 }
@@ -204,7 +179,6 @@
     position:absolute;
     width: 25%;
     left:77%;
-    // font-size: 15pt;
     color: black;
     text-decoration: underline;
 }
@@ -213,20 +187,11 @@
     width: 33%;
     text-decoration: underline;
     left:42%;
-    // position: relative;
-    // font-size: 15pt;
     color: black;
-    // top: 0px;
-    // width: 30%;
-    // right: 0%;
 }
 
 .log-in-sign-up {
     background-color:#F9E4C5;
     right: 0px;
     top: 0px;
-}
-
-.fal-container {
-    max-width: 60px;
 }
