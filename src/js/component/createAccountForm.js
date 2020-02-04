@@ -36,9 +36,9 @@ export const CreateAccountForm = () => {
 					<input type="text" className="form-control" id="exampleFormControlInput1" placeholder="33174" />
 				</div>
 				<br />
-				<button type="submit" className="btn btn-primary">
+				<a type="submit" className="sign-up-btn btn-primary btn-lg" href="#" role="button">
 					Sign Up
-				</button>
+				</a>
 			</form>
 		</div>
 	);

@@ -73,13 +73,18 @@
     max-height: 400px;
     max-width: 400px;
     min-width: 400px;
-    float: center;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .create-account-form {
     background-color:#F9E4C5;
     max-width: 400px;
     min-width: 400px;
     float: center;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .log-in-form-landing {
     display: block;
@@ -112,6 +117,28 @@
     position:absolute;
     height: 30%;
     width: auto;
+}
+
+.log-in-bt {
+    background-color: #DCAA69;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sign-up-btn {
+    background-color: #DCAA69;
+    position: relative;
+    margin-top: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.send-email-button {
+    background-color: #DCAA69;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 // #github {
 //     display: absolute;
@@ -198,4 +225,8 @@
     background-color:#F9E4C5;
     right: 0px;
     top: 0px;
+}
+
+.fal-container {
+    max-width: 60px;
 }

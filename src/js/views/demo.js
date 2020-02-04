@@ -14,8 +14,8 @@ export const FindALawyer = () => {
 			{store.lawData &&
 				store.lawData.map((e, index) => (
 					<li key={index} className="list-group-item rigobaby" style={{ margin: "5px" }}>
-						<div className="row w-100">
-							<div className="col-12 col-sm-6 col-md-3 px-0">
+						<div className="row w-60">
+							<div className="col-11 col-sm-6 col-md-3 px-0">
 								<img
 									src="https://i.imgur.com/5A6LNz5.jpg"
 									alt="Mike Anamendolla"
@@ -47,6 +47,7 @@ export const FindALawyer = () => {
 						</div>
 					</li>
 				))}
+			<br />
 			<Link to={"/"} className="back-home btn-primary btn-lg" href="#" role="button">
 				Back Home
 			</Link>

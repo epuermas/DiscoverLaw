@@ -26,7 +26,7 @@ export const AskALawyer = () => {
 				/>
 			</div>
 			<a className="send-email-button btn-primary btn-lg" href="#" role="button">
-				About Us
+				Submit
 			</a>
 		</form>
 	);
