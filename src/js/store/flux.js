@@ -1,9 +1,11 @@
+const url1 = "https://discoverlaw.herokuapp.com/";
 import React from "react";
 
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
 			lawData: [],
+			user: [],
 			cards: [
 				{
 					image: <i className="fas fa-search" />,
@@ -32,8 +34,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 			loadSomeData: () => {
 				// let url = "https://newsapi.org/v2/top-headlines?country=US&apiKey=ac3b6745f35049228bbf45bb264b948c";
-				let url1 = "https://discoverlaw.herokuapp.com/lawyer";
-				fetch(url1)
+				fetch(url1 + "lawyer/")
 					//     {
 					// 	method: "GET",
 					// 	headers: myHeaders
@@ -43,6 +44,28 @@ const getState = ({ getStore, getActions, setStore }) => {
 						console.log("dataaaa", data), setStore({ lawData: data });
 					});
 				// .catch(err => console.error(err));
+			},
+			getUser: () => {
+				fetch(url1 + "user/")
+					.then(res => res.json())
+					.then(result => {
+						console.log("resultyttttttttttt", result);
+						setStore({ user: result });
+					});
+			},
+			addUser: (email, name, password, zipcode) => {
+				fetch(url1 + "user/", {
+					method: "POST",
+					headers: { "Content-type": "application/json" },
+					body: JSON.stringify({
+						email: email,
+						name: name,
+						password: password,
+						zipcode: zipcode
+					})
+				}).then(() => {
+					getActions().getUser();
+				});
 			},
 			changeColor: (index, color) => {
 				//get the store
