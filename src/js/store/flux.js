@@ -5,6 +5,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
 			lawData: [],
+			token: null,
 			user: [],
 			cards: [
 				{
@@ -27,6 +28,21 @@ const getState = ({ getStore, getActions, setStore }) => {
 			]
 		},
 		actions: {
+			logout: () => {
+				setStore({ token: null });
+			},
+			login: (bubu, tutu) => {
+				fetch("https://discoverlaw.herokuapp.com/login", {
+					method: "POST",
+					headers: { "Content-Type": "application/json" },
+					body: JSON.stringify({
+						email: bubu,
+						password: tutu
+					})
+				})
+					.then(response => response.json())
+					.then(token => setStore({ token: token.jwt }));
+			},
 			// Use getActions to call a function within a fuction
 			exampleFunction: () => {
 				getActions().changeColor(0, "green");

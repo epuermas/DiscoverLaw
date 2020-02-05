@@ -1,18 +1,33 @@
 import { Link } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "../../styles/demo.scss";
+import { Context } from "../store/appContext";
 
 export const LogIn = () => {
+	const { store, actions } = useContext(Context);
+	const [email, setEmail] = useState();
+	const [password, setPassword] = useState();
 	return (
 		<div className="log-in-form">
-			<form>
+			<div>
 				<div className="form-group">
 					<label htmlFor="exampleInputEmail1">Email address</label>
-					<input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+					<input
+						onChange={e => setEmail(e.target.value)}
+						type="email"
+						className="form-control"
+						id="exampleInputEmail1"
+						aria-describedby="emailHelp"
+					/>
 				</div>
 				<div className="form-group">
 					<label htmlFor="exampleInputPassword1">Password</label>
-					<input type="password" className="form-control" id="exampleInputPassword1" />
+					<input
+						onChange={e => setPassword(e.target.value)}
+						type="password"
+						className="form-control"
+						id="exampleInputPassword1"
+					/>
 				</div>
 				<div className="form-group form-check">
 					<input type="checkbox" className="form-check-input" id="exampleCheck1" />
@@ -21,10 +36,10 @@ export const LogIn = () => {
 					</label>
 				</div>
 				<br />
-				<a type="submit" className="log-in-bt btn-primary btn-lg" href="#" role="button">
+				<div onClick={() => actions.login(email, password)} className="log-in-bt btn-primary btn-lg">
 					Log In
-				</a>
-			</form>
+				</div>
+			</div>
 		</div>
 		// <div
 		// 	className="modal fade"
