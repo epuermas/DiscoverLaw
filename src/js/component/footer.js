@@ -8,10 +8,11 @@ export const Footer = () => (
 	<footer
 		className="footer mt-auto py-3"
 		style={{
-			position: "absolute",
+			position: "relative",
 			width: "100%",
 			height: "200px",
 			bottom: "0",
+			top: "50%",
 			backgroundColor: "#F9E4C5"
 		}}>
 		<div className="footerMenu">

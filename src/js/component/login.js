@@ -36,9 +36,12 @@ export const LogIn = () => {
 					</label>
 				</div>
 				<br />
-				<div onClick={() => actions.login(email, password)} className="log-in-bt btn-primary btn-lg">
+				<Link
+					to={"/findalawyer"}
+					onClick={() => actions.login(email, password)}
+					className="log-in-bt btn-primary btn-lg">
 					Log In
-				</div>
+				</Link>
 			</div>
 		</div>
 		// <div
