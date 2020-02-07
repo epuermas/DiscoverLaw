@@ -8,9 +8,21 @@ export const CreateAccountForm = () => {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [zipcode, setZipcode] = useState("");
+	const [phone, setPhone] = useState("");
+	const [lawfirm, setLawfirm] = useState("");
 
 	return (
 		<div className="create-account-form">
+			<a
+				type="submit"
+				className="sign-up-btn btn-primary btn-lg"
+				href="#"
+				role="button"
+				onClick={() => {
+					actions.addUser(email, name, password, phone, zipcode);
+				}}>
+				user
+			</a>
 			<form>
 				<div className="form-name">
 					<label htmlFor="exampleFormControlInput1">Full Name</label>
@@ -49,15 +61,17 @@ export const CreateAccountForm = () => {
 						onChange={e => setPassword(e.target.value)}
 					/>
 				</div>
-				{/* <div className="form-phone">
+				<div className="form-phone">
 					<label htmlFor="exampleFormControlInput1">Phone Number</label>
 					<input
 						type="phone"
 						className="form-control"
 						id="exampleFormControlInput1"
 						placeholder="(305)-555-1234"
+						defaultValue={phone}
+						onChange={e => setPhone(e.target.value)}
 					/>
-				</div> */}
+				</div>
 				<div className="form-zip-code">
 					<label htmlFor="exampleFormControlInput1">Zip Code</label>
 					<input
@@ -69,6 +83,17 @@ export const CreateAccountForm = () => {
 						onChange={e => setZipcode(e.target.value)}
 					/>
 				</div>
+				<div className="form-law-firm">
+					<label htmlFor="exampleFormControlInput1">Law Firm</label>
+					<input
+						type="text"
+						className="form-control"
+						id="exampleFormControlInput1"
+						placeholder="Law Firm Name"
+						defaultValue={lawfirm}
+						onChange={e => setLawfirm(e.target.value)}
+					/>
+				</div>
 				<br />
 				<a
 					type="submit"
@@ -76,9 +101,9 @@ export const CreateAccountForm = () => {
 					href="#"
 					role="button"
 					onClick={() => {
-						actions.addUser(email, name, password, zipcode);
+						actions.addLawyer(email, name, password, phone, zipcode, lawFirm);
 					}}>
-					Sign Up
+					Lawyer
 				</a>
 			</form>
 		</div>
