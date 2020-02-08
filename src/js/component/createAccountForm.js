@@ -13,16 +13,6 @@ export const CreateAccountForm = () => {
 
 	return (
 		<div className="create-account-form">
-			<a
-				type="submit"
-				className="sign-up-btn btn-primary btn-lg"
-				href="#"
-				role="button"
-				onClick={() => {
-					actions.addUser(email, name, password, phone, zipcode);
-				}}>
-				user
-			</a>
 			<form>
 				<div className="form-name">
 					<label htmlFor="exampleFormControlInput1">Full Name</label>
@@ -96,8 +86,18 @@ export const CreateAccountForm = () => {
 				</div>
 				<br />
 				<a
+					className="User-button btn-primary btn-lg"
 					type="submit"
-					className="sign-up-btn btn-primary btn-lg"
+					href="#"
+					role="button"
+					onClick={() => {
+						actions.addUser(email, name, password, phone, zipcode);
+					}}>
+					User
+				</a>
+				<a
+					className="Lawyer-button btn-primary btn-lg"
+					type="submit"
 					href="#"
 					role="button"
 					onClick={() => {

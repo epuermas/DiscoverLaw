@@ -144,7 +144,15 @@ body{width:100%; margin:auto;}
     transform: translate(-50%, -50%);
 }
 
-.sign-up-btn {
+.User-button {
+    background-color: #DCAA69;
+    position: relative;
+    margin-top: 10px;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.Lawyer-button {
     background-color: #DCAA69;
     position: relative;
     margin-top: 10px;
@@ -212,4 +220,12 @@ body{width:100%; margin:auto;}
     background-color:#F9E4C5;
     right: 0px;
     top: 0px;
+}
+
+.User-button{
+
+}
+
+.Lawyer-button{
+
 }
