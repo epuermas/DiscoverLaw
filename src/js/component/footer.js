@@ -12,7 +12,7 @@ export const Footer = () => (
 			width: "100%",
 			height: "220px",
 			bottom: "0%",
-			top: "3%",
+			top: "5%",
 			backgroundColor: "#F9E4C5"
 		}}>
 		<div className="footerMenu">
