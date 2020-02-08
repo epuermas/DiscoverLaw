@@ -10,9 +10,9 @@ export const Footer = () => (
 		style={{
 			position: "relative",
 			width: "100%",
-			height: "220px",
+			height: "225px",
 			bottom: "0%",
-			top: "5%",
+			top: "33%",
 			backgroundColor: "#F9E4C5"
 		}}>
 		<div className="footerMenu">
