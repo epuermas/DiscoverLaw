@@ -1,10 +1,26 @@
 body{width:100%; margin:auto;}
 
 .company-logo {
-    height: 75px;
-    width: 250px;
+    position: relative;
+    max-height: 100px;
+    max-width: 100px;
     margin-bottom: 0px;
     margin-top: 0px;
+}
+#navHome {
+    margin-top: 30px;
+    margin-bottom: auto;
+}
+#navFind {
+    margin-top: 30px;
+    margin-bottom: auto;
+}
+#navAsk {
+    margin-top: 30px;
+    margin-bottom: auto;
+}
+.navbar {
+    max-height: 80px;
 }
 .nav-link {
     margin-left: 10px;

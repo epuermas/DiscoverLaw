@@ -19,22 +19,22 @@ export const Navbar = () => {
 			<div className="collapse navbar-collapse" id="navbarNav">
 				<ul className="navbar-nav">
 					<div className="company-logo">
-						<img src="https://i.imgur.com/Hkm9zHE.png" width="100%" alt="" className="pull-left" />
+						<img src="https://i.imgur.com/weh324h.png" width="100%" alt="" className="pull-left" />
 					</div>
 					<li className="nav-item active">
-						<a className="nav-link" href="/">
+						<a className="nav-link" href="/" id="navHome">
 							Home <span className="sr-only">(current)</span>
 						</a>
 					</li>
 
 					<li className="nav-item">
-						<Link to={"findalawyer"} className="nav-link" href="#">
+						<Link to={"findalawyer"} className="nav-link" href="#" id="navFind">
 							Find A Lawyer
 						</Link>
 					</li>
 
 					<li className="nav-item">
-						<Link to={"/askalawyer"} className="nav-link" href="#">
+						<Link to={"/askalawyer"} className="nav-link" href="#" id="navAsk">
 							Ask A Lawyer
 						</Link>
 					</li>
