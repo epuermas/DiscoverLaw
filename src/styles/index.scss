@@ -115,17 +115,17 @@ body{width:100%; margin:auto;}
     margin-right: auto;
 }
 .ask-form {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: auto;
-    min-height: 100px;
-    min-width: 200px;
-    max-width: 500px;
+    // display: block;
+    // margin-left: auto;
+    // margin-right: auto;
+    // margin-top: 50px;
+    // margin-bottom: auto;
+    // min-height: 100px;
+    // min-width: 200px;
+    // max-width: 500px;
     position:absolute;
     top:10%;
-    left: 30%;
+    left: 20%;
 }
 .home-button {
     font-size: 15pt;
@@ -236,7 +236,10 @@ body{width:100%; margin:auto;}
     position:absolute;
     width: 40%;
     height: auto;
-    background-color: #DAD7D7;
+    background-color: #F0EEEE;
     left:30%;
     top:20%;
+}
+.questionBox{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

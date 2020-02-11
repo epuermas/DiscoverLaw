@@ -10,8 +10,9 @@ export const AskALawyer = () => {
 	return (
 		<form className="askQuestion">
 			<div className="ask-form flex-column h-100">
-				<input
-					className="text-center"
+				<p>Ask a lawyer any question!!</p>
+				<textarea
+					style={{ width: "400px" }}
 					type="text"
 					defaultValue={question}
 					onChange={e => setQuestion(e.target.value)}
@@ -32,11 +33,11 @@ export const AskALawyer = () => {
 					}}
                 /> */}
 				<p>{"You have " + (maxLength - question.length) + " left"}</p>
-				<QuestionBox />
+				<a className="send-email-button btn-primary btn-lg" href="#" role="button">
+					Submit
+				</a>
 			</div>
-			<a className="send-email-button btn-primary btn-lg" href="#" role="button">
-				Submit
-			</a>
+			<QuestionBox />
 		</form>
 	);
 };
