@@ -123,6 +123,9 @@ body{width:100%; margin:auto;}
     min-height: 100px;
     min-width: 200px;
     max-width: 500px;
+    position:absolute;
+    top:10%;
+    left: 30%;
 }
 .home-button {
     font-size: 15pt;
@@ -228,4 +231,12 @@ body{width:100%; margin:auto;}
 
 .Lawyer-button{
 
+}
+.askQuestion{
+    position:absolute;
+    width: 40%;
+    height: auto;
+    background-color: #DAD7D7;
+    left:30%;
+    top:20%;
 }

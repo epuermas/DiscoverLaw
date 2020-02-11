@@ -2,13 +2,20 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { TextField } from "@material-ui/core";
+import { QuestionBox } from "../component/questionbox";
 
 export const AskALawyer = () => {
 	const maxLength = 1000;
 	const [question, setQuestion] = useState("");
 	return (
-		<form>
+		<form className="askQuestion">
 			<div className="ask-form flex-column h-100">
+				<input
+					className="text-center"
+					type="text"
+					defaultValue={question}
+					onChange={e => setQuestion(e.target.value)}
+				/>
 				{/* <TextField
 					id="standard-full-width"
 					style={{ margin: 6 }}
@@ -23,7 +30,9 @@ export const AskALawyer = () => {
 					InputLabelProps={{
 						shrink: true
 					}}
-				/> */}
+                /> */}
+				<p>{"You have " + (maxLength - question.length) + " left"}</p>
+				<QuestionBox />
 			</div>
 			<a className="send-email-button btn-primary btn-lg" href="#" role="button">
 				Submit
