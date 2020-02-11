@@ -7,6 +7,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			lawData: [],
 			token: null,
 			user: [],
+			questions: [],
 			cards: [
 				{
 					image: <i className="fas fa-search" />,
@@ -69,6 +70,13 @@ const getState = ({ getStore, getActions, setStore }) => {
 						setStore({ user: result });
 					});
 			},
+			getQuestion: () => {
+				fetch(url1 + "question")
+					.then(res => res.json())
+					.then(result => {
+						console.log("getting question", result), setStore({ questions: result });
+					});
+			},
 			addUser: (email, name, password, zipcode) => {
 				fetch(url1 + "user/", {
 					method: "POST",
@@ -81,6 +89,17 @@ const getState = ({ getStore, getActions, setStore }) => {
 					})
 				}).then(() => {
 					getActions().getUser();
+				});
+			},
+			createQuestion: question => {
+				fetch(url1 + "/question", {
+					method: "POST",
+					headers: { "Content-type": "application/json" },
+					body: JSON.stringify({
+						question: question
+					})
+				}).then(() => {
+					getActions().getQuestion();
 				});
 			},
 			changeColor: (index, color) => {

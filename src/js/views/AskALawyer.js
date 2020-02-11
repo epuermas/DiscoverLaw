@@ -9,7 +9,7 @@ export const AskALawyer = () => {
 	return (
 		<form>
 			<div className="ask-form flex-column h-100">
-				<TextField
+				{/* <TextField
 					id="standard-full-width"
 					style={{ margin: 6 }}
 					placeholder="Write your question"
@@ -23,7 +23,7 @@ export const AskALawyer = () => {
 					InputLabelProps={{
 						shrink: true
 					}}
-				/>
+				/> */}
 			</div>
 			<a className="send-email-button btn-primary btn-lg" href="#" role="button">
 				Submit
