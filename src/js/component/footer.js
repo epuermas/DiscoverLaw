@@ -10,11 +10,14 @@ export const Footer = () => (
 		style={{
 			position: "relative",
 			width: "100%",
-			height: "225px",
+			height: "230px",
 			bottom: "0%",
-			top: "32%",
+			top: "33%",
 			backgroundColor: "#F9E4C5"
 		}}>
+		<div className="copyright-info">
+			<p>DiscoverLaw Copyright © 2020</p>
+		</div>
 		<div className="footerMenu">
 			<Link to={"/askalawyer"}>
 				<div className="askL">Ask A Lawyer</div>
