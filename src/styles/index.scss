@@ -80,11 +80,17 @@ body{width:100%; margin:auto;}
     right: 15px;
     top: 15px;
 }
+.log-in:hover{
+    background-color: gray;
+}
 .create-account {
     background-color: #DCAA69;
     position: absolute;
     right: 130px;
     top: 15px;
+}
+.create-account:hover{
+    background-color: gray;
 }
 .log-in-form {
     background-color:#F9E4C5;
@@ -142,11 +148,13 @@ body{width:100%; margin:auto;}
 
 .log-in-bt {
     background-color: #DCAA69;
-    position: relative;
+    position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+.log-in-bt:hover{
+    background-color: gray;
+}
 .User-button {
     background-color: #DCAA69;
     position: relative;
@@ -168,6 +176,9 @@ body{width:100%; margin:auto;}
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.send-email-button:hover{
+    background-color: gray;
 }
 .socialMedia {
     position: absolute;
@@ -223,6 +234,9 @@ body{width:100%; margin:auto;}
     background-color:#F9E4C5;
     right: 0px;
     top: 0px;
+}
+.log-in-sign-up:hover{
+    background-color: gray;
 }
 
 .User-button{

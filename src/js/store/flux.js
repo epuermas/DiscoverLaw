@@ -6,7 +6,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			lawData: [],
 			token: null,
-			user: [],
+			currentUser: null,
+			users: [],
 			questions: [],
 			cards: [
 				{
@@ -42,7 +43,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					})
 				})
 					.then(response => response.json())
-					.then(token => setStore({ token: token.jwt }));
+					.then(data => setStore({ token: data.jwt, currentUser: data.user }));
 			},
 			// Use getActions to call a function within a fuction
 			exampleFunction: () => {
@@ -92,15 +93,28 @@ const getState = ({ getStore, getActions, setStore }) => {
 				});
 			},
 			createQuestion: question => {
-				fetch(url1 + "/question", {
+				const store = getStore();
+				if (store.currentUser === null) {
+					alert("You are not logged in");
+					return;
+				}
+				fetch(url1 + "question", {
 					method: "POST",
 					headers: { "Content-type": "application/json" },
 					body: JSON.stringify({
-						question: question
+						question: question,
+						user_id: store.currentUser.id
 					})
-				}).then(() => {
-					getActions().getQuestion();
-				});
+				})
+					.then(resp => {
+						if (resp.status === 200) {
+							getActions().getQuestion();
+						} else alert("There was an error sumbiting the question");
+					})
+					.catch(error => {
+						alert("There was an error sumbiting the question");
+						console.log(error);
+					});
 			},
 			changeColor: (index, color) => {
 				//get the store
