@@ -8,6 +8,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			token: null,
 			currentUser: null,
 			users: [],
+			email: [],
 			questions: [],
 			cards: [
 				{
@@ -71,6 +72,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 						setStore({ user: result });
 					});
 			},
+			getEmail: () => {
+				fetch(url1 + "test_email/")
+					.then(res => res.json())
+					.then(result => {
+						console.log("emailllll", result);
+						setStore({ email: result });
+					});
+			},
 			getQuestion: () => {
 				fetch(url1 + "question")
 					.then(res => res.json())
@@ -94,6 +103,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 			createQuestion: question => {
 				const store = getStore();
+				const actions = getActions();
 				if (store.currentUser === null) {
 					alert("You are not logged in");
 					return;
@@ -109,6 +119,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.then(resp => {
 						if (resp.status === 200) {
 							getActions().getQuestion();
+							actions.getEmail();
 						} else alert("There was an error sumbiting the question");
 					})
 					.catch(error => {

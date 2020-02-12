@@ -10,27 +10,29 @@ export const AskALawyer = () => {
 	const maxLength = 1000;
 	const [question, setQuestion] = useState("");
 	return (
-		<form className="askQuestion">
-			<div className="ask-form flex-column h-100">
-				<p>Ask a lawyer any question!!</p>
-				<textarea
-					style={{ width: "400px" }}
-					type="text"
-					defaultValue={question}
-					onChange={e => setQuestion(e.target.value)}
-				/>
-				<p>{"You have " + (maxLength - question.length) + " left"}</p>
-				<a
-					className="send-email-button btn-primary btn-lg"
-					href="#"
-					onClick={() => {
-						actions.createQuestion(question);
-					}}
-					role="button">
-					Submit
-				</a>
+		<div>
+			<div className="askQuestion">
+				<div className="ask-form flex-column h-100">
+					<p>Ask a lawyer any question!!</p>
+					<textarea
+						style={{ width: "400px" }}
+						type="text"
+						defaultValue={question}
+						onChange={e => setQuestion(e.target.value)}
+					/>
+					<p>{"You have " + (maxLength - question.length) + " left"}</p>
+					<button
+						className="send-email-button btn-primary btn-lg"
+						href="#"
+						onClick={() => {
+							actions.createQuestion(question);
+						}}
+						role="button">
+						Submit
+					</button>
+				</div>
+				<QuestionBox />
 			</div>
-			<QuestionBox />
-		</form>
+		</div>
 	);
 };
