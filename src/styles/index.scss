@@ -175,7 +175,7 @@ body{width:100%; margin:auto;}
 .send-email-button {
     background-color: #DCAA69;
     position: absolute;
-    left: 75%;
+    left: 79%;
     top: 100px;
 }
 .send-email-button:hover{
@@ -239,24 +239,19 @@ body{width:100%; margin:auto;}
 .log-in-sign-up:hover{
     background-color: gray;
 }
-
-.User-button{
-
-}
-
-.Lawyer-button{
-
-}
 .askQuestion{
     position:absolute;
     width: 40%;
     height: auto;
     background-color: #F0EEEE;
-    left:30%;
+    left:25%;
     top:20%;
 }
 .questionBox{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    min-width: 600px;
+    position: absolute;
+    right: 200px;
 }
 .copyright-info {
     position: absolute;

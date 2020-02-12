@@ -10,7 +10,7 @@ export const QuestionBox = () => {
 				position: "absolute",
 				width: "400px",
 				height: "auto",
-				left: "20%",
+				left: "10%",
 				top: "200px",
 				backgroundColor: "#Dad7d7",
 				padding: "10px"

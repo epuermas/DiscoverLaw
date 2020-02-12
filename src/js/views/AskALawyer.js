@@ -15,14 +15,14 @@ export const AskALawyer = () => {
 				<div className="ask-form flex-column h-100">
 					<p>Ask a lawyer any question!!</p>
 					<textarea
-						style={{ width: "400px" }}
+						style={{ width: "450px" }}
 						type="text"
 						defaultValue={question}
 						onChange={e => setQuestion(e.target.value)}
 					/>
 					<div className="below-ask-question">
 						<p>{"You have " + (maxLength - question.length) + " left"}</p>
-						<button
+						<a
 							className="send-email-button btn-primary btn-lg"
 							href="#"
 							onClick={() => {
@@ -30,10 +30,12 @@ export const AskALawyer = () => {
 							}}
 							role="button">
 							Submit
-						</button>
+						</a>
 					</div>
 				</div>
-				<QuestionBox />
+				<div className="question-box">
+					<QuestionBox />
+				</div>
 			</div>
 		</div>
 	);
