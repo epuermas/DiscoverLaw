@@ -20,16 +20,18 @@ export const AskALawyer = () => {
 						defaultValue={question}
 						onChange={e => setQuestion(e.target.value)}
 					/>
-					<p>{"You have " + (maxLength - question.length) + " left"}</p>
-					<button
-						className="send-email-button btn-primary btn-lg"
-						href="#"
-						onClick={() => {
-							actions.createQuestion(question);
-						}}
-						role="button">
-						Submit
-					</button>
+					<div className="below-ask-question">
+						<p>{"You have " + (maxLength - question.length) + " left"}</p>
+						<button
+							className="send-email-button btn-primary btn-lg"
+							href="#"
+							onClick={() => {
+								actions.createQuestion(question);
+							}}
+							role="button">
+							Submit
+						</button>
+					</div>
 				</div>
 				<QuestionBox />
 			</div>
