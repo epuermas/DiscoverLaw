@@ -86,17 +86,19 @@ export const CreateAccountForm = () => {
 					/>
 				</div>
 				<br />
-				<a
-					className="User-button btn-primary btn-lg"
-					type="submit"
-					href="#"
-					role="button"
-					onClick={() => {
-						actions.addUser(email, name, password, zipcode, phone);
-						alert("User account has been created");
-					}}>
-					User
-				</a>
+				<Link to="login">
+					<a
+						className="User-button btn-primary btn-lg"
+						type="submit"
+						href="#"
+						role="button"
+						onClick={() => {
+							actions.addUser(email, name, password, zipcode, phone);
+							alert("User account has been created");
+						}}>
+						User
+					</a>
+				</Link>
 				<a
 					className="Lawyer-button btn-primary btn-lg"
 					type="submit"

@@ -31,7 +31,7 @@ export const Layout = () => {
 						<Route path="/login" component={LogIn} />
 						<Route exact path="/CreateAccount" component={CreateAccount} />
 						<Route exact path="/askalawyer" component={AskALawyer} />
-						<Route exact path="/lawyeranswer" component={LawyerAnswer} />
+						<Route exact path="/lawyeranswer/:questionID" component={LawyerAnswer} />
 						<Route path="/single/:theid" component={Single} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>

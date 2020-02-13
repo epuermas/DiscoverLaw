@@ -7,20 +7,21 @@ export const QuestionBox = () => {
 	console.log("testingg", store.quetions);
 	return (
 		<div>
-			{store.questions.map((e, index) => {
-				return (
-					<div key={index} className="row m-3">
-						<div className="col" />
-						<div className="col-6 pt-2 questionBox">
-							<p>{e.question}</p>
+			{store.questions &&
+				store.questions.map((e, index) => {
+					return (
+						<div key={index} className="row m-3">
+							<div className="col" />
+							<div className="col-6 pt-2 questionBox">
+								<p>{e.question}</p>
+							</div>
+							<Link to={"/lawyeranswer/" + index}>
+								<button className="btn btn-secondary">Answer</button>
+							</Link>
+							<div className="col" />
 						</div>
-						<Link to="/lawyeranswer">
-							<button className="btn btn-secondary">Answer</button>
-						</Link>
-						<div className="col" />
-					</div>
-				);
-			})}
+					);
+				})}
 		</div>
 	);
 };

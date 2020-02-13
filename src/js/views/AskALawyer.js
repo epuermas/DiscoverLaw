@@ -18,14 +18,16 @@ export const AskALawyer = () => {
 			<div className="form-group">
 				<div className="ask-form flex-column h-100">
 					<div className="row">
-						<div className="col-3 m-0 p-0" />
-						<p className="col-5 d-flex justify-content-center">Ask a lawyer any question.</p>
+						<div className="col-2 m-0 p-0" />
+						<h3 className="col-5 d-flex justify-content-center" style={{ color: "#DCAA69" }}>
+							Ask a lawyer any question.
+						</h3>
 						{/* <div className="col-4 m-0 p-0" /> */}
 					</div>
 					<div className="row">
 						<div className="col m-0 p-0" />
 						<textarea
-							className="col-6 align-self-center"
+							className="col-6 align-self-center mb-5"
 							// style={{ width: "450px" }}
 							type="text"
 							defaultValue={question}
@@ -34,7 +36,7 @@ export const AskALawyer = () => {
 						<div className="col m-0 p-0" />
 					</div>
 					<div className="below-ask-question">
-						<p>{"You have " + (maxLength - question.length) + " left"}</p>
+						{/* <p>{"You have " + (maxLength - question.length) + " left"}</p> */}
 						<a
 							className="send-email-button btn-primary btn-lg"
 							href="#"

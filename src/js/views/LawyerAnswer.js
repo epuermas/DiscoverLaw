@@ -1,23 +1,25 @@
 import React, { useContext, useState } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
-export const LawyerAnswer = () => {
-	const { actions } = useContext(Context);
+export const LawyerAnswer = props => {
+	const { store, actions } = useContext(Context);
 	const [answer, setAnswer] = useState("");
 	return (
 		<div>
 			<div className="row m-3 mt-5">
 				<div className="col" />
+
 				<div className="col-6 pt-2 questionBox">
-					<p>question</p>
+					<p>{store.questions[props.match.params.questionID].question}</p>
 				</div>
 				<div className="col" />
 			</div>
 			<div className="row mt-5">
 				<div className="col m-0 p-0" />
 				<textarea
-					className="col-5 align-self-center"
+					className="col-5"
 					// style={{ width: "450px" }}
 					type="text"
 					defaultValue={answer}
@@ -40,7 +42,12 @@ export const LawyerAnswer = () => {
 					</a>
 				</Link>
 				<div className="col" />
+				<div className="col" />
 			</div>
 		</div>
 	);
+};
+
+LawyerAnswer.propTypes = {
+	match: PropTypes.object
 };

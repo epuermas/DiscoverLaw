@@ -10,6 +10,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			currentUser: null,
 			users: [],
 			email: [],
+			answer: [],
 			questions: [],
 			cards: [
 				{
@@ -100,7 +101,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				fetch(url1 + "answers")
 					.then(res => res.json())
 					.then(result => {
-						console.log("getting answer", result), setStore({ questions: result });
+						console.log("getting answer", result), setStore({ answer: result });
 					});
 			},
 			addUser: (email, name, password, zipcode, phone) => {
