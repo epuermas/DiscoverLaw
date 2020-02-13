@@ -9,6 +9,7 @@ export const AskALawyer = () => {
 	const { store, actions } = useContext(Context);
 	const maxLength = 1000;
 	const [question, setQuestion] = useState("");
+	console.log("kind", store.kind);
 	return (
 		<div>
 			{/* askQuestion */}

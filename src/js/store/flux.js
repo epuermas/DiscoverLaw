@@ -70,7 +70,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				fetch(url1 + "user/")
 					.then(res => res.json())
 					.then(result => {
-						console.log("resultyttttttttttt", result);
+						console.log("get usersssss", result);
 						setStore({ user: result });
 					});
 			},
@@ -89,6 +89,13 @@ const getState = ({ getStore, getActions, setStore }) => {
 						console.log("getting question", result), setStore({ questions: result });
 					});
 			},
+			getAnswer: () => {
+				fetch(url1 + "answers")
+					.then(res => res.json())
+					.then(result => {
+						console.log("getting answer", result), setStore({ questions: result });
+					});
+			},
 			addUser: (email, name, password, zipcode) => {
 				fetch(url1 + "user/", {
 					method: "POST",
@@ -101,6 +108,17 @@ const getState = ({ getStore, getActions, setStore }) => {
 					})
 				}).then(() => {
 					getActions().getUser();
+				});
+			},
+			addAnswer: answer => {
+				fetch(url1 + "answers", {
+					method: "POST",
+					headers: { "Content-type": "application/json" },
+					body: JSON.stringify({
+						answers: answer
+					})
+				}).then(() => {
+					getActions().getAnswer();
 				});
 			},
 			createQuestion: question => {

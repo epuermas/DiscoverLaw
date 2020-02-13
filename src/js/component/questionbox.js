@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
+import { Link } from "react-router-dom";
 
 export const QuestionBox = () => {
 	const { store } = useContext(Context);
@@ -12,7 +13,9 @@ export const QuestionBox = () => {
 						<div className="col-6 pt-2 questionBox">
 							<p>{e.question}</p>
 						</div>
-						<button className="btn btn-secondary">Answer</button>
+						<Link to="/lawyeranswer">
+							<button className="btn btn-secondary">Answer</button>
+						</Link>
 						<div className="col" />
 					</div>
 				);
