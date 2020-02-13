@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import React, { useState, useContext } from "react";
 import "../../styles/demo.scss";
+import PropTypes from "prop-types";
 import { Context } from "../store/appContext";
 
-export const LogIn = () => {
+export const LogIn = props => {
 	const { store, actions } = useContext(Context);
 	const [email, setEmail] = useState();
 	const [password, setPassword] = useState();
@@ -36,12 +37,12 @@ export const LogIn = () => {
 					</label>
 				</div>
 				<br />
-				<Link
+				<button
 					to={"/findalawyer"}
-					onClick={() => actions.login(email, password)}
+					onClick={() => actions.login(email, password, props.history)}
 					className="log-in-bt btn-primary btn-lg">
 					Log In
-				</Link>
+				</button>
 			</div>
 		</div>
 		// <div
@@ -104,4 +105,7 @@ export const LogIn = () => {
 		// 	</div>
 		// </div>
 	);
+};
+LogIn.propTypes = {
+	history: PropTypes.object
 };

@@ -92,7 +92,7 @@ export const CreateAccountForm = () => {
 					href="#"
 					role="button"
 					onClick={() => {
-						actions.addUser(email, name, password, zipcode, kind, phone);
+						actions.addUser(email, name, password, zipcode, phone);
 						alert("User account has been created");
 					}}>
 					User
@@ -103,7 +103,7 @@ export const CreateAccountForm = () => {
 					href="#"
 					role="button"
 					onClick={() => {
-						actions.addLawyer(email, name, password, phone, zipcode, lawfirm, kind);
+						actions.addLawyer(email, name, password, phone, zipcode, lawfirm);
 						alert("Lawyer account has been created");
 					}}>
 					Lawyer

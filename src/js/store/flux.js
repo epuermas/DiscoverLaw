@@ -36,7 +36,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			logout: () => {
 				setStore({ token: null });
 			},
-			login: (bubu, tutu) => {
+			login: (bubu, tutu, history) => {
 				fetch("https://discoverlaw.herokuapp.com/login", {
 					method: "POST",
 					headers: { "Content-Type": "application/json" },
@@ -45,8 +45,15 @@ const getState = ({ getStore, getActions, setStore }) => {
 						password: tutu
 					})
 				})
-					.then(response => response.json())
-					.then(data => setStore({ token: data.jwt, currentUser: data.user }));
+					.then(response => {
+						if (response.status === 200) return response.json();
+						alert("Username or password does not match any");
+						throw Error('"Username or password does not match any"');
+					})
+					.then(data => {
+						setStore({ token: data.jwt, currentUser: data.user });
+						history.push("/findalawyer");
+					});
 			},
 			// Use getActions to call a function within a fuction
 			exampleFunction: () => {
@@ -96,7 +103,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 						console.log("getting answer", result), setStore({ questions: result });
 					});
 			},
-			addUser: (email, name, password, zipcode, kind, phone) => {
+			addUser: (email, name, password, zipcode, phone) => {
 				fetch(url1 + "user/", {
 					method: "POST",
 					headers: { "Content-type": "application/json" },
@@ -105,14 +112,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 						name: name,
 						password: password,
 						zipcode: zipcode,
-						kind: kind,
+						kind: "user",
 						phone: phone
 					})
 				}).then(() => {
 					getActions().getUser();
 				});
 			},
-			addLawyer: (email, name, password, phone, zipcode, lawfirm, kind) => {
+			addLawyer: (email, name, password, phone, zipcode, lawfirm) => {
 				fetch(url1 + "lawyer/", {
 					method: "POST",
 					headers: { "Content-type": "application/json" },
@@ -123,7 +130,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 						phone: phone,
 						zipcode: zipcode,
 						lawfirm: lawfirm,
-						kind: kind
+						kind: "lawyer"
 					})
 				}).then(() => {
 					getActions().getLawyer();

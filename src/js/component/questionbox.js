@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 export const QuestionBox = () => {
 	const { store } = useContext(Context);
+	console.log("testingg", store.quetions);
 	return (
 		<div>
 			{store.questions.map((e, index) => {
