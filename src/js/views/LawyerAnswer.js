@@ -29,13 +29,15 @@ export const LawyerAnswer = () => {
 				<div className="col" />
 				<div className="col" />
 				<Link to="askalawyer">
-					<button
-						className="col-md-1 offset-md-1 mt-2 btn btn-secondary"
+					{/* col-md-1 offset-md-1 mt-2 */}
+					<a
+						className=" btn-primary btn-lg answer-submit"
 						onClick={() => {
 							actions.addAnswer(answer);
-						}}>
+						}}
+						role="button">
 						Submit
-					</button>
+					</a>
 				</Link>
 				<div className="col" />
 			</div>
