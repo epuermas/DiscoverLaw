@@ -31,7 +31,7 @@ export const LawyerAnswer = () => {
 				<Link to="askalawyer">
 					{/* col-md-1 offset-md-1 mt-2 */}
 					<a
-						className=" btn-primary btn-lg answer-submit"
+						className="answer-submit btn-primary btn-lg"
 						onClick={() => {
 							actions.addAnswer(answer);
 						}}

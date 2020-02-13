@@ -178,13 +178,14 @@ footer{
 .send-email-button {
     background-color: #DCAA69;
     position: absolute;
-    left: 79%;
-    top: 100px;
+    left: 76%;
+    top: 122px;
 }
 .send-email-button:hover{
     background-color: gray;
 }
-.socialMedia {
+.socialMedi
+style {
     position: absolute;
     top: 50%;
     width: 10%;
@@ -262,15 +263,14 @@ footer{
     left: 5px;
 }
 .character-counter{
-    position: absolute;
     left: 50%;
 }
 .answer-submit {
     background-color: #DCAA69;
-    color: #F0EEEE;
+    color: white !important; 
     position: absolute;
     left: 72%;
-    top: 226px;
+    top: 227px;
 }
 .answer-submit:hover{
     background-color: gray;

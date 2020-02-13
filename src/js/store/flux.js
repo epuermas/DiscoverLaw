@@ -96,7 +96,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 						console.log("getting answer", result), setStore({ questions: result });
 					});
 			},
-			addUser: (email, name, password, zipcode) => {
+			addUser: (email, name, password, zipcode, kind) => {
 				fetch(url1 + "user/", {
 					method: "POST",
 					headers: { "Content-type": "application/json" },
@@ -104,10 +104,28 @@ const getState = ({ getStore, getActions, setStore }) => {
 						email: email,
 						name: name,
 						password: password,
-						zipcode: zipcode
+						zipcode: zipcode,
+						kind: kind
 					})
 				}).then(() => {
 					getActions().getUser();
+				});
+			},
+			addLawyer: (email, name, password, phone, zipcode, lawfirm, kind) => {
+				fetch(url1 + "lawyer/", {
+					method: "POST",
+					headers: { "Content-type": "application/json" },
+					body: JSON.stringify({
+						email: email,
+						name: name,
+						password: password,
+						phone: phone,
+						zipcode: zipcode,
+						lawfirm: lawfirm,
+						kind: kind
+					})
+				}).then(() => {
+					getActions().getLawyer();
 				});
 			},
 			addAnswer: answer => {
