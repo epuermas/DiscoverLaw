@@ -1,5 +1,8 @@
 body{width:100%; margin:auto;}
-
+footer{
+    position:absolute;
+    bottom:0;
+}
 .company-logo {
     position: relative;
     max-height: 100px;
@@ -130,9 +133,9 @@ body{width:100%; margin:auto;}
     // min-height: 100px;
     // min-width: 200px;
     // max-width: 500px;
-    position:absolute;
-    top:10%;
-    left: 20%;
+    // position:absolute;
+    // top:10%;
+    // left: 20%;
 }
 .home-button {
     font-size: 15pt;
@@ -240,18 +243,18 @@ body{width:100%; margin:auto;}
     background-color: gray;
 }
 .askQuestion{
-    position:absolute;
-    width: 40%;
-    height: auto;
+    // position:absolute;
+    // width: 40%;
+    // height: auto;
     background-color: #F0EEEE;
-    left:25%;
-    top:20%;
+    // left:25%;
+    // top:20%;
 }
 .questionBox{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    min-width: 600px;
-    position: absolute;
-    right: 200px;
+    // min-width: 600px;
+    // position: absolute;
+    // right: 200px;
 }
 .copyright-info {
     position: absolute;

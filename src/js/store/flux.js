@@ -4,6 +4,7 @@ import React from "react";
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
+			kind: "lawyer",
 			lawData: [],
 			token: null,
 			currentUser: null,

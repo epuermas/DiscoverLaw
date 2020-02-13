@@ -36,14 +36,3 @@ export const Footer = () => (
 		</div>
 	</footer>
 );
-/* <Link to={""} className="about-button" href="#">
-			About Us
-		</Link>
-		{/* <p>
-			<br />
-			Made with <i className="fa fa-heart text-danger text-center" /> by E.Puermas, J.Guzman, Abel
-        </p> */
-// <p>
-// 	<br />
-// 	<SocialIcon url="http://twitter.com/jaketrent" />
-// </p>
