@@ -31,7 +31,7 @@ export const Footer = () => (
 		</div>
 		<div className="socialMedia">
 			<a
-				className="fab fa-instagram insta"
+				className="insta fab fa-instagram"
 				style={{
 					color: "black"
 				}}
@@ -40,16 +40,13 @@ export const Footer = () => (
 				rel="noopener noreferrer"
 			/>
 			<a
-				className="fab fa-twitter-square twitter"
-				style={{
-					color: "black"
-				}}
+				className="twitter fab fa-twitter-square"
 				href="https://twitter.com/eddy_prms"
 				target="_blank"
 				rel="noopener noreferrer"
 			/>
 			<a
-				className="fab fa-github-square github"
+				className="github fab fa-github-square"
 				style={{
 					color: "black"
 				}}

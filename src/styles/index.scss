@@ -203,7 +203,11 @@ style {
 }
 .twitter {
     position: absolute;
+    color: black;
     left: 50%;
+    top: 10%;
+    min-height: 30px;
+    min-width: auto;
     transform: translate(-50%, -50%);
 }
 .footerMenu {
