@@ -9,6 +9,7 @@ export const CreateAccountForm = () => {
 	const [password, setPassword] = useState("");
 	const [zipcode, setZipcode] = useState("");
 	const [phone, setPhone] = useState("");
+	const [kind, setKind] = useState("");
 	const [lawfirm, setLawfirm] = useState("");
 
 	return (
@@ -91,7 +92,7 @@ export const CreateAccountForm = () => {
 					href="#"
 					role="button"
 					onClick={() => {
-						actions.addUser(email, name, password, phone, zipcode);
+						actions.addUser(email, name, password, zipcode, kind, phone);
 						alert("User account has been created");
 					}}>
 					User
@@ -102,7 +103,7 @@ export const CreateAccountForm = () => {
 					href="#"
 					role="button"
 					onClick={() => {
-						actions.addLawyer(email, name, password, phone, zipcode, lawfirm);
+						actions.addLawyer(email, name, password, phone, zipcode, lawfirm, kind);
 						alert("Lawyer account has been created");
 					}}>
 					Lawyer

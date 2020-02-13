@@ -53,7 +53,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				getActions().changeColor(0, "green");
 			},
 
-			loadSomeData: () => {
+			getLawyer: () => {
 				// let url = "https://newsapi.org/v2/top-headlines?country=US&apiKey=ac3b6745f35049228bbf45bb264b948c";
 				fetch(url1 + "lawyer/")
 					//     {
@@ -96,7 +96,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 						console.log("getting answer", result), setStore({ questions: result });
 					});
 			},
-			addUser: (email, name, password, zipcode, kind) => {
+			addUser: (email, name, password, zipcode, kind, phone) => {
 				fetch(url1 + "user/", {
 					method: "POST",
 					headers: { "Content-type": "application/json" },
@@ -105,7 +105,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 						name: name,
 						password: password,
 						zipcode: zipcode,
-						kind: kind
+						kind: kind,
+						phone: phone
 					})
 				}).then(() => {
 					getActions().getUser();

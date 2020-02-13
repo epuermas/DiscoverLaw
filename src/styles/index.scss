@@ -185,21 +185,26 @@ footer{
     background-color: gray;
 }
 .socialMedi
-style {
+ {
     position: absolute;
     top: 50%;
-    width: 10%;
+    width: 30%;
+    height: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
 }
 .insta{
+    position: absolute;
     margin:2px;
-    left:0;
+    left:40%;
+
+    top: 10%;
 }
 .github{
     position: absolute;
-    right: 0;
+    right: 40%;
+    top: 10%;
 }
 .twitter {
     position: absolute;
@@ -208,7 +213,7 @@ style {
     top: 10%;
     min-height: 30px;
     min-width: auto;
-    transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
 }
 .footerMenu {
     position: absolute;

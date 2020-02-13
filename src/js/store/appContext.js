@@ -30,7 +30,7 @@ const injectContext = PassedComponent => {
 			 *
 			 *
 			 **/
-			state.actions.loadSomeData(); //<---- calling this function from the flux.js actions
+			state.actions.getLawyer(); //<---- calling this function from the flux.js actions
 			state.actions.getUser(); //<---- calling this function from the flux.js actions
 			state.actions.getQuestion(); //<---- calling this function from the flux.js actions
 			state.actions.getAnswer(); //<---- calling this function from the flux.js actions
