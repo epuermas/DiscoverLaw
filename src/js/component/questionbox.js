@@ -7,11 +7,12 @@ export const QuestionBox = () => {
 		<div>
 			{store.questions.map((e, index) => {
 				return (
-					<div key={index} className="row m-1">
+					<div key={index} className="row m-3">
 						<div className="col" />
-						<div className="col-6 bg-primary">
+						<div className="col-6 pt-2 questionBox">
 							<p>{e.question}</p>
 						</div>
+						<button className="btn btn-secondary">Answer</button>
 						<div className="col" />
 					</div>
 				);
