@@ -30,9 +30,33 @@ export const Footer = () => (
 			</Link>
 		</div>
 		<div className="socialMedia">
-			<i className="fab fa-instagram insta" url="https://www.instagram.com/eddy_prms/" />
-			<i className="fab fa-twitter-square twitter" url="https://twitter.com/home" />
-			<i className="fab fa-github-square github" url="https://github.com/epuermas" />
+			<a
+				className="fab fa-instagram insta"
+				style={{
+					color: "black"
+				}}
+				href="https://www.instagram.com/eddy_prms/"
+				target="_blank"
+				rel="noopener noreferrer"
+			/>
+			<a
+				className="fab fa-twitter-square twitter"
+				style={{
+					color: "black"
+				}}
+				href="https://twitter.com/eddy_prms"
+				target="_blank"
+				rel="noopener noreferrer"
+			/>
+			<a
+				className="fab fa-github-square github"
+				style={{
+					color: "black"
+				}}
+				href="https://github.com/epuermas"
+				target="_blank"
+				rel="noopener noreferrer"
+			/>
 		</div>
 	</footer>
 );
