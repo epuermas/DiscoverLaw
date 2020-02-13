@@ -12,7 +12,7 @@ export const QuestionBox = () => {
 				height: "auto",
 				left: "10%",
 				top: "200px",
-				backgroundColor: "#Dad7d7",
+				backgroundColor: "#FFFFFF",
 				padding: "10px"
 			}}>
 			{store.questions.map((e, index) => (

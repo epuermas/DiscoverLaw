@@ -13,7 +13,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			cards: [
 				{
 					image: <i className="fas fa-search" />,
-					title: "Find Lawyers Near You",
+					title: "Find Lawyers",
 					description:
 						"Using our registry of attorneys you will be able to find the right counsil depending on your legal needs."
 				},
@@ -24,9 +24,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 						"With our intuative 'Ask A Lawyer' service you'll be able to submit legal questions and receive answers from certified attorneys."
 				},
 				{
-					image: <i className="far fa-newspaper" />,
-					title: "Get Informed",
-					description: "Constant flow of news pertaining to legality, legislation, and current events."
+					image: <i className="far fa-handshake" />,
+					title: "Build A Relationship",
+					description:
+						"Consult with attorneys online prior to meeting to see if they are the right fit for you."
 				}
 			]
 		},

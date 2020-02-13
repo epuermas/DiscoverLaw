@@ -13,7 +13,7 @@ export const AskALawyer = () => {
 		<div>
 			<div className="askQuestion">
 				<div className="ask-form flex-column h-100">
-					<p>Ask a lawyer any question!!</p>
+					<p>Ask a lawyer any question.</p>
 					<textarea
 						style={{ width: "450px" }}
 						type="text"
