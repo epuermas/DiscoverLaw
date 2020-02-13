@@ -32,7 +32,6 @@ footer{
 }
 .jumbotron-fluid {
     background-image: url("https://i.imgur.com/PBZdORn.jpg");
-
     background-color: transparent;
     background-repeat:no-repeat;
     min-height: 400px;
@@ -149,7 +148,6 @@ footer{
     height: 30%;
     width: auto;
 }
-
 .log-in-bt {
     background-color: #DCAA69;
     position: absolute;
@@ -166,7 +164,6 @@ footer{
     left: 25%;
     transform: translate(-50%, -50%);
 }
-
 .Lawyer-button {
     background-color: #DCAA69;
     position: relative;
@@ -174,7 +171,6 @@ footer{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 .send-email-button {
     background-color: #DCAA69;
     position: absolute;
@@ -185,32 +181,29 @@ footer{
     background-color: gray;
 }
 .socialMedi
- {
+style {
     position: absolute;
     top: 50%;
-    width: 30%;
-    height: 30%;
+    width: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
 }
 .insta{
-    position: absolute;
-    margin:2px;
-    left:40%;
-
-    top: 10%;
+    margin: 5px;
+    left: 40%;
+    top: 60%;
 }
 .github{
     position: absolute;
     right: 40%;
-    top: 10%;
+    top: 60%;
 }
 .twitter {
     position: absolute;
     color: black;
-    left: 50%;
-    top: 10%;
+    left: 49%;
+    top: 60%;
     min-height: 30px;
     min-width: auto;
     // transform: translate(-50%, -50%);
@@ -219,13 +212,13 @@ footer{
     position: absolute;
     width: 40%;
     height: 30px;
-    top:30%;
+    top: 30%;
     left: 30%;
 }
 .homeL {
     position:absolute;
     width: 33%;
-    left:4%;
+    left:10%;
     color: black;
     text-decoration: underline;
 }
@@ -243,7 +236,6 @@ footer{
     left:42%;
     color: black;
 }
-
 .log-in-sign-up {
     background-color:#F9E4C5;
     right: 0px;
