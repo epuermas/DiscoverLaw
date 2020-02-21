@@ -56,7 +56,7 @@ export const FindALawyer = () => {
 					</li>
 				))}
 			<br />
-			<Link to={"/"} className="back-home btn-primary btn-lg" href="#" role="button">
+			<Link to={"/"} className="back-home btn-primary btn-lg centered" href="#" role="button">
 				Back Home
 			</Link>
 		</div>

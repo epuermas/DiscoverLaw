@@ -37,12 +37,12 @@ export const LogIn = props => {
 					</label>
 				</div>
 				<br />
-				<button
+				<a
 					to={"/findalawyer"}
 					onClick={() => actions.login(email, password, props.history)}
 					className="log-in-bt btn-primary btn-lg">
 					Log In
-				</button>
+				</a>
 			</div>
 		</div>
 		// <div
