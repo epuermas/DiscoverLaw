@@ -7,7 +7,7 @@ import "../../styles/demo.scss";
 
 export const FindALawyer = () => {
 	const { store, actions } = useContext(Context);
-	console.log("data", store.lawData);
+	// console.log("data", store.lawData);
 
 	return (
 		<div className="fal-view container">
