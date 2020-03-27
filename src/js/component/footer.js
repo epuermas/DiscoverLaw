@@ -29,6 +29,7 @@ export const Footer = () => (
 				<div className="findL">Find A Lawyer</div>
 			</Link>
 		</div>
+		{/* Social Media section */}
 		<div className="socialMedia">
 			<a
 				className="insta fab fa-3x fa-instagram"

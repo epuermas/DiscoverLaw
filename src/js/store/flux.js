@@ -70,7 +70,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					// })
 					.then(res => res.json())
 					.then(data => {
-						console.log("dataaaa", data), setStore({ lawData: data });
+						console.log(data), setStore({ lawData: data });
 					});
 				// .catch(err => console.error(err));
 			},
