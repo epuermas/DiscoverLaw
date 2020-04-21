@@ -19,7 +19,7 @@ export const AskALawyer = () => {
 				<div className="ask-form flex-column h-100">
 					<div className="row">
 						<div className="col-2 m-0 p-0" />
-						<h3 className="col-5 d-flex justify-content-center" style={{ color: "#DCAA69" }}>
+						<h3 className="col-6 d-flex justify-content-center" style={{ color: "#DCAA69" }}>
 							Ask a lawyer any question.
 						</h3>
 						{/* <div className="col-4 m-0 p-0" /> */}
