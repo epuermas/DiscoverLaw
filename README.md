@@ -16,4 +16,7 @@ $ npm install
 
 ## Run the program:
 Start the webpack server with live reload:
-`$ npm run start` for windows, mac, linux or Gitpod.
+```
+$ npm run start
+```
+for windows, mac, linux or Gitpod.
