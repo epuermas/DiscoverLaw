@@ -4,7 +4,7 @@ DiscoverLaw started as a group project for our coding bootcamp.  This web-app wa
 For this program we used React.js, Bootstrap 4, CSS, Python, SQL, and Heroku.
 
 Website preview: 
-https://i.imgur.com/LVEMYZQ.mp4
+![alt](https://github.com/epuermas/DiscoverLaw/blob/master/ezgif-6-a03d5d9beb4a.gif?raw=true)
 
 # WebApp boilerplate with React JS
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/epuermas/Final-Project/commits/master)
