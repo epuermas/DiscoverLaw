@@ -1,6 +1,6 @@
 ## DiscoverLaw
 
-Website Address: https://master.di7tl6sp3rh5z.amplifyapp.com/askalawyer
+Website Address: https://master.di7tl6sp3rh5z.amplifyapp.com/
 
 DiscoverLaw started as a group project for our coding bootcamp.  This web-app was built so bridge the gap between client and attorney communication.  Often times, clients call attorneys without knowing the field of law they need counsel in.  With DiscoverLaw users can sign-in and post legal questions.  This will trigger notifications for the registered attorneys to go and answer the user's question.  The attorneys benefit because they can count time spent answering questions as pro-bono time.  Users benefit by getting answers to their questions from professionals in the field of law.
 
