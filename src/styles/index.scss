@@ -32,9 +32,10 @@ footer{
 }
 .jumbotron-fluid {
     background-image: url("https://i.imgur.com/PBZdORn.jpg");
-    background-color: transparent;
+    background-color: white;
     background-repeat:no-repeat;
     min-height: 400px;
+    min-width: 1000px;
     background-position: center;
     backdrop-filter: blur(2px);
 }
@@ -79,7 +80,7 @@ footer{
 .log-in {
     background-color: #DCAA69;
     position: absolute;
-    right: 15px;
+    right: 120px;
     top: 15px;
 }
 .log-in:hover{
@@ -88,7 +89,7 @@ footer{
 .create-account {
     background-color: #DCAA69;
     position: absolute;
-    right: 130px;
+    right: 225px;
     top: 15px;
 }
 .create-account:hover{
@@ -147,6 +148,9 @@ footer{
     position:absolute;
     height: 30%;
     width: auto;
+}
+.login-buttons{
+    
 }
 .log-in-bt {
     background-color: #DCAA69;

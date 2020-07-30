@@ -5,7 +5,7 @@ import { login } from "./login";
 
 export const Jumbotron = () => {
 	return (
-		<div className="jumbotron-fluid">
+		<div className="jumbotron-fluid .container-fluid width: 100%">
 			<center className="jumtext">
 				<h1 className="display-4">Welcome to DiscoverLaw</h1>
 				<p className="lead">Legal help is just a few clicks away.</p>
@@ -15,12 +15,18 @@ export const Jumbotron = () => {
 					{/* <button className="log-in btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal">
 						Log In
 					</button> */}
-					<Link to={"/login"} className="log-in btn-primary btn-lg" href="#" role="button">
-						Log In
-					</Link>
-					<Link to={"/createAccount"} className="create-account btn-primary btn-lg" href="#" role="button">
-						Sign Up
-					</Link>
+					<div className="login-buttons">
+						<Link to={"/login"} className="log-in btn-primary btn-lg" href="#" role="button">
+							Log In
+						</Link>
+						<Link
+							to={"/createAccount"}
+							className="create-account btn-primary btn-lg"
+							href="#"
+							role="button">
+							Sign Up
+						</Link>
+					</div>
 				</div>
 			</center>
 		</div>
