@@ -17,7 +17,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					image: <i className="fas fa-search" />,
 					title: "Find Lawyers",
 					description:
-						"Using our registry of attorneys you will be able to find the right counsil depending on your legal needs."
+						"Using our registry of attorneys you will be able to find the right counsil based on your legal needs."
 				},
 				{
 					image: <i className="fas fa-question-circle" />,
