@@ -18,7 +18,7 @@ export const FindALawyer = () => {
 							<div className="col-11 col-sm-6 col-md-3 px-0">
 								<img
 									src="https://i.imgur.com/5A6LNz5.jpg"
-									alt="Mike Anamendolla"
+									alt="Mike"
 									className="rounded-circle mx-auto d-block img-fluid"
 								/>
 							</div>
