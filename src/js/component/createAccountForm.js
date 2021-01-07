@@ -26,10 +26,10 @@ export const CreateAccountForm = () => {
 						onChange={e => setName(e.target.value)}
 					/>
 				</div>
-				{/* <div className="form-last-name">
+				<div className="form-last-name">
 					<label htmlFor="exampleFormControlInput1">Last Name</label>
 					<input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Doe" />
-				</div> */}
+				</div>
 				<div className="-form-email-name">
 					<label htmlFor="exampleFormControlInput1">E-Mail</label>
 					<input
